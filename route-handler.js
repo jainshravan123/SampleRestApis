@@ -2,7 +2,7 @@ const eventsData = require('./SampleData/events.json')
 let dataHandler = require('./data-handler')
 
 let getEvents = (req, res) => {
-    let page = parseInt(req.params.page)
+    let page = parseInt(req.query.page)
     if (!page || page === 0) {
         res.send(dataHandler.generateEventsData(10))
     } else {
