@@ -12,6 +12,13 @@ app.get('/', (req, res) => {
 
 app.get('/api/events', routeHandler.getEvents)
 
+app.get('*', (req, res) => {
+    res.send({
+        status: 404,
+        message: 'This route does not exit.'
+    })
+})
+
 app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}`)
 })

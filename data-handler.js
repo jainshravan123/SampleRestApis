@@ -1,5 +1,4 @@
 var random_name = require('node-random-name')
-let dateGenerator = require('random-date-generator')
 
 let generateRandomPlace = () => {
     let cities = [
@@ -32,15 +31,11 @@ let generateRandomPlace = () => {
 function generateRandomDate() {
     let start = new Date(1976, 0, 1)
     let end = new Date(2020, 2, 14)
-    /*
-    var date = new Date(start + Math.random() * (end - start));
-    return date;
-    */
     let timestamp = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
     var date = timestamp.getDate()
     var month = timestamp.getMonth()+1
     var year = timestamp.getFullYear()
-    var completeDate = month+'/'+date+'/'+year
+    var completeDate = date+'/'+month+'/'+year
     return completeDate
 }
 
