@@ -13,7 +13,7 @@ let getEvents = (req, res) => {
     } else if (page >= 1 && page <=12) {
         events.page = page
         events.total = 115
-        events.totalPages = 12  
+        events.totalPages = 12
         if (page >= 1 && page <= 11) {
             events.data = dataHandler.generateEventsData(10)
         } else {
