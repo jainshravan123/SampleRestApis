@@ -4,7 +4,7 @@ const PORT = 3000
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'Welcome to Sample Apis.'
+        message: 'Welcome to Sample Apis!!!'
     })
 })
 
