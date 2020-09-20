@@ -17,10 +17,10 @@ let getEvents = (req, res) => {
     } else {
         events.page = page
         events.total = 115
-        events.totalPages =  12  
+        events.totalPages = 12  
         events.data = []
     }
-    return events
+    res.send(events)
 }
 
 module.exports = {
