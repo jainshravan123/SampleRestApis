@@ -10,18 +10,6 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/welcome', (req, res) => {
-    res.json({
-        message: 'Hello World!!!'
-    })
-})
-
-app.get('/api', (req, res) => {
-    res.json({
-        message: 'Welcome to the world of REST APIs'
-    })
-})
-
 app.get('/api/events', routeHandler.getEvents)
 
 app.listen(PORT, () => {
