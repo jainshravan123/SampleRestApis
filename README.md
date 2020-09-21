@@ -1,8 +1,6 @@
 # SampleRestApis
 
-[![Build Status][travis-badge]][travis]
-[![Dependencies][dependencies-badge]][dependencies]
-[![PRs Welcome][prs-badge]][prs]
+[![Build Status](https://travis-ci.com/jainshravan123/SampleRestApis.svg?branch=master)](https://travis-ci.com/jainshravan123/SampleRestApis)
 
 ## About
 
