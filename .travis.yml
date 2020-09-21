@@ -1,0 +1,12 @@
+group: bluezone
+dist: xenial
+language: node_js
+node_js:
+  - "12"
+install:
+  - npm install
+
+# Added by Stef & Alex
+# Pipe npm t logs away from console to prevent 4mb Travis limit
+script:
+  - npm test &>> npm-run-test.log || (echo "npm t has failed, tail of build output is:"; tail -3000 npm-run-test.log; exit 1)
