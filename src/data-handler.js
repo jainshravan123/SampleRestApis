@@ -41,22 +41,24 @@ function generateRandomDate () {
 
 const generateEventsData = (numberOfRecords) => {
   const data = []
-  for (let i = 0; i < numberOfRecords; i++) {
-    const maleNameOne = randomName({ random: Math.random, first: true, gender: 'male' })
-    const maleNameTwo = randomName({ random: Math.random, first: true, gender: 'male' })
-    const femaleNameOne = randomName({ random: Math.random, first: true, gender: 'female' })
-
-    const event = {
-      name: `Marriage of ${maleNameOne} and ${femaleNameOne}`,
-      organizer: `${maleNameTwo} pvt ltd`,
-      date: generateRandomDate(),
-      place: generateRandomPlace(),
-      payment: {
-        status: 'done',
-        type: 'Online Transfer'
+  if (numberOfRecords && numberOfRecords > 0) {
+    for (let i = 0; i < numberOfRecords; i++) {
+      const maleNameOne = randomName({ random: Math.random, first: true, gender: 'male' })
+      const maleNameTwo = randomName({ random: Math.random, first: true, gender: 'male' })
+      const femaleNameOne = randomName({ random: Math.random, first: true, gender: 'female' })
+  
+      const event = {
+        name: `Marriage of ${maleNameOne} and ${femaleNameOne}`,
+        organizer: `${maleNameTwo} pvt ltd`,
+        date: generateRandomDate(),
+        place: generateRandomPlace(),
+        payment: {
+          status: 'done',
+          type: 'Online Transfer'
+        }
       }
+      data.push(event)
     }
-    data.push(event)
   }
   return data
 }

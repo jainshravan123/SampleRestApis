@@ -3,7 +3,7 @@ const dataHandler = require('./data-handler')
 const getEvents = (req, res) => {
   const page = parseInt(req.query.page)
   const events = {}
-  if (!page || page === 0) {
+  if (!page && page !== 0) {
     events.total = 115
     events.totalPages = 12
     events.data = dataHandler.generateEventsData(115)
