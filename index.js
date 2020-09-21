@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 3000
 
-const routeHandler = require('./route-handler')
+const routeHandler = require('./src/route-handler')
 
 app.get('/', (req, res) => {
   res.json({
