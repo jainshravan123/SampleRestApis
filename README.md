@@ -6,12 +6,12 @@
 
 This repository exposes the rest apis for generating the sample data.
 
-# Description
+## Description
 This is a node js app which is hosted on heroku cloud. 
 https://sample-rest-apis.herokuapp.com/
 
 
-# API
+## API
 This app is exposing the paginated apis for generating the sample data. 
 
 If you don't provide any page number then this api will return the complete data. 
