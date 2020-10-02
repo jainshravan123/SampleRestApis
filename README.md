@@ -4,7 +4,7 @@
 
 ## About
 
-This repository will generate the sample data for the rest apis.
+This repository exposes the rest apis for generating the sample data.
 
 # Description
 This is a node js app which is hosted on heroku cloud. 
