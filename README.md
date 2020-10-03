@@ -1,4 +1,4 @@
-# SampleRestApis
+# Sample Rest Apis
 
 [![Build Status](https://travis-ci.com/jainshravan123/SampleRestApis.svg?branch=master)](https://travis-ci.com/jainshravan123/SampleRestApis)
 
